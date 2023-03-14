@@ -1,0 +1,41 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #303841;
+    background-color: #f8c630;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-container{
+    width: 90vh;
+    height: 90vh;
+    border: 1px solid #b7245c;
+    display: flex;
+}
+
+label, p, input{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#slider:hover {
+    cursor: grab;
+}
+#slider:active{
+    cursor: grabbing;
+}
+
+a{
+    text-decoration: none;
+    color: #303841;
+}
+a:hover{
+    color: #b7245c;
+}

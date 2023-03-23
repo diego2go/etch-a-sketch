@@ -22,3 +22,5 @@ function createGrid () {
         gridContainer.appendChild(div);
     }
 }
+
+const setButton = document.querySelector('button');

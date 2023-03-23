@@ -32,6 +32,9 @@ label, p, input, h1{
     padding: 8px 0;
     text-align: center;
 }
+.item{
+    border: 0.5px dotted gray;
+}
 
 #slider:hover {
     cursor: grab;

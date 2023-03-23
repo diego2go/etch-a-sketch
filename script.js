@@ -1,7 +1,7 @@
 // slider display
 const slider = document.getElementById('slider');
 const sliderContainer = document.querySelector('form');
-const display = document.createElement('p');
+const display = document.querySelector('.display');
 
 sliderContainer.appendChild(display);
 slider.oninput = function () {

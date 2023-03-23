@@ -24,3 +24,9 @@ function createGrid () {
 }
 
 const setButton = document.querySelector('button');
+
+function resetGrid() {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+}

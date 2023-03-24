@@ -9,6 +9,8 @@ slider.oninput = function () {
     gridSize = slider.value;
     gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+    resetGrid();
+    createGrid();
 }
 // To set grid size dynamically
 const gridContainer = document.querySelector('.grid-container');

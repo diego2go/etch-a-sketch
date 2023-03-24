@@ -5,15 +5,14 @@ const display = document.querySelector('.display');
 
 sliderContainer.appendChild(display);
 slider.oninput = function () {
-    display.textContent = `${this.value} X ${this.value}`
+    display.textContent = `${this.value} X ${this.value}`;
+    gridSize = slider.value;
+    gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+    gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 }
 // To set grid size dynamically
 const gridContainer = document.querySelector('.grid-container');
-let gridSize = slider.value;
-
-
-gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+let gridSize;
 
 function createGrid () {
     for (let i = gridSize * gridSize; i > 0 ; i--) {
@@ -22,8 +21,6 @@ function createGrid () {
         gridContainer.appendChild(div);
     }
 }
-
-const setButton = document.querySelector('button');
 
 function resetGrid() {
     while (gridContainer.firstChild) {

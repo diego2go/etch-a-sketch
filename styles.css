@@ -26,14 +26,11 @@ body{
     display: grid;
 }
 
-label, p, input, h1, button{
+label, p, input, h1{
     display: block;
     margin: auto;
     padding: 8px 0;
     text-align: center;
-}
-button {
-    padding: 8px;
 }
 .item{
     border: 0.5px dotted gray;

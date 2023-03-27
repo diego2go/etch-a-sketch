@@ -11,6 +11,7 @@ slider.oninput = function () {
     gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
     resetGrid();
     createGrid();
+    changeItemColor();
 }
 // To set grid size dynamically
 const gridContainer = document.querySelector('.grid-container');
@@ -28,4 +29,14 @@ function resetGrid() {
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
+}
+
+function changeItemColor() {
+    // event listener to change div items background color
+    let tiles = document.querySelectorAll('div.item');
+    tiles.forEach((div) => {
+    div.addEventListener('mouseover', ( )=> {
+        div.style.backgroundColor = 'black';
+    } )
+})
 }

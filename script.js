@@ -13,7 +13,7 @@ slider.oninput = function () {
     createGrid();
     changeItemColor();
 }
-// To set grid size dynamically
+
 const gridContainer = document.querySelector('.grid-container');
 let gridSize;
 

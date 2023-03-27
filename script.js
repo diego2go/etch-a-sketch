@@ -36,7 +36,7 @@ function changeItemColor() {
     let tiles = document.querySelectorAll('div.item');
     tiles.forEach((div) => {
     div.addEventListener('mouseover', ( )=> {
-        div.style.backgroundColor = 'black';
+        div.style.backgroundColor = '#303841';
     } )
 })
 }
